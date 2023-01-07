@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/ " alt="logo"></a> -->
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li ><a href="training.html">Trainings</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href=" ">Login</a></li>
+                    <li><a href="">Signup</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Our Trainings</h1>
+    </div>
+
+    </section>
+
+    <!-- ------Training------ -->
+    <section class="training">
+        <h1>Trainings We Offer </h1>
+
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Exercitationem impedit expedita dignissimos aliquam magnam facere reiciendis modi iste nemo ratione eveniet, ea repellendus aperiam veniam recusandae, 
+            corrupti enim ut accusantium.
+        </p>
+        <div class="row">
+            <div class="training-col">
+                <h3>Basic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Voluptas eligendi quisquam animi! Unde consequatur, sit similique, suscipit itaque quibusdam facere quisquam earum accusamus repellendus 
+                    laudantium obcaecati exercitationem maxime voluptatum quos.</p>
+            </div>
+            <div class="training-col">
+                <h3>Intermediate </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sint sequi quis ratione voluptatum repellat laboriosam ullam iure velit vero quaerat voluptatem dicta voluptatibus, 
+                    obcaecati tempora eius nulla eaque molestias?</p>
+            </div>
+            <div class="training-col">
+                <h3>Advanced</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus optio, vel neque magnam dolor quis dolorum saepe modi molestiae aliquam aspernatur soluta facilis eaque.
+                    Repudiandae iusto deserunt qui quasi consequatur!
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <!-- ----Footer----- -->
+    <section class="footer">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li>Terms & Conditions</li>
+                <li>FAQs</li>
+                <li>Vendors</li>
+                <li>Services</li>
+            </ul>
+        </div>
+            
+        <div class="footer-col">
+            <h4>Contact US</h4>
+            <p>Email Us: info@glamsolution.com</p>
+            <i class="fa fa-facebook" ></i>
+        </div>
+        <div class="footer-col">
+            <form>
+                <h4>Send Feedback</h4>
+                <label for="query">Enter your feedback</label><br>
+                <textarea placeholder="Enter your text here"></textarea><br><br>
+                <label for="name">Your Name</label> 
+                <input type="text" id="name" name="name"><br><br>
+                <label id="phone">Enter your phone number</label>
+                <input type="number" maxlength="20" id="phone"><br><br>
+                <label for="email">Enter your email address</label>
+                <input type="email" id="email"><br><br>
+                <button>Submit</button>
+        
+            </form>
+        </div>
+        
+            
+    </section>
+    <!-- --------JavaScript for Toggle Menu------- -->
+    <script>
+        var navbar = document.getElementById("navbar");
+        function showMenu(){
+            navbar.style.right ="0";
+        }
+        function hideMenu(){
+            navbar.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>

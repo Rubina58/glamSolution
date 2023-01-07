@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <blockquote>
+        <section class="sub-header">
+            <nav>
+                <!-- <a href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+                <div class="navbar" id="navbar">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li ><a href="training.html">Trainings</a></li>
+                        <li><a href="contact.html" target="_parent">Contact Us</a></li>
+                        <li><a href=" ">Login</a></li>
+                        <li><a href="">Signup</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+        <div class="text">
+            <h3>glamSolution.com</h3><br>
+            <p>We are here for your every needs</p>
+        </div>
+     </section>
+
+    <section class="Contact">
+            <div class="contact-row">
+                <form>
+                    <h3>Contact Us For Any Queries</h3>
+                    <label for="query">Enter your query</label><br>
+                    <textarea placeholder="Enter your text here"></textarea><br>
+                    <label for="name">Enter your Name</label> 
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label id="phone">Enter your phone number</label>
+                    <input type="number" maxlength="20" id="phone" required><br><br>
+                    <label for="email">Enter your email address</label>
+                    <input type="email" id="email" required><br><br>
+                    <button>Submit</button>
+            
+                </form>
+            </div>
+            <div class="contact-row">
+                <h3>Book for your special day</h3>
+                    <label for="name">Enter your Name</label> 
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label id="phone">Enter your phone number</label>
+                    <input type="tele" maxlength="20" id="phone" required><br><br>
+                    <label for="email">Enter your email address</label>
+                    <input type="email" id="email" required><br><br>
+                    <label for="service">Service</label>
+                    <select>
+                       <option>--Choose---</option>
+                        <optgroup label="Makeup">
+                            <option value="Makeup">Bridal</option>
+                            <option value="Makeup">Party</option>
+                            <option value="">Reception</option>
+                            <option value="">Simple</option>
+                        </optgroup>
+                        <optgroup label="Nails">
+                            <option value="">long</option>
+                            <option value="">short</option>
+                            <option value="">medium</option>
+                        </optgroup>
+                        <optgroup label="Hair">
+                            <option value="">long</option>
+                            <option value="">short</option>
+                            <option value="">medium</option>
+                        </optgroup>
+                    </select><br><br>
+                    <label>Training</label>
+                    <input type="radio" name="training" value="basic">Basic
+                    <input type="radio" name="training" value="intermediate">Intermediate
+                    <input type="radio" name="training" value="advance">Advance<br><br>
+                    <button>Submit</button>
+            
+            </div>
+    </section>
+
+        <!-- ----Footer----- -->
+    <section class="footer">
+        
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li>Contact Us</li>
+                <li>Terms & Conditions</li>
+                <li>FAQs</li>
+                <li>Vendors</li>
+                <li>Services</li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>Email Us: info@glamsolution.com</p>
+            <i class="fa fa-facebook" ></i>
+        </div>
+
+        <div class="footer-col">
+            <form>
+                <h4>Send Feedback</h4>
+                <label for="query">Enter your feedback</label><br>
+                <textarea placeholder="Enter your text here"></textarea><br><br>
+                <label for="name">Your Name</label> 
+                <input type="text" id="name" name="name"><br><br>
+                <label id="phone">Enter your phone number</label>
+                <input type="number" maxlength="20" id="phone"><br><br>
+                <label for="email">Enter your email address</label>
+                <input type="email" id="email"><br><br>
+                <button>Submit</button>
+        
+            </form>
+        </div>
+            
+    </section>
+
+    <!-- --------JavaScript for Toggle Menu------- -->
+    <script>
+        var navbar = document.getElementById("navbar");
+        function showMenu(){
+            navbar.style.right ="0";
+        }
+        function hideMenu(){
+            navbar.style.right ="-200px";
+        }
+    </script>
+    </blockquote>
+</body>
+</html>
